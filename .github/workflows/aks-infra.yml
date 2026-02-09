@@ -1,0 +1,16 @@
+name: azure-aks-infra-deployment
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+run-name: self-hosted
+jobs:
+  checkout:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+    
+    
+      

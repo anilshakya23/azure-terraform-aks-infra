@@ -1,6 +1,9 @@
 name: azure-aks-infra-deployment
 on: 
  workflow_dispatch: 
+permissions:
+  id-token: write
+  contents: read
 run-name: self-hosted
 jobs:
   checkout:
@@ -8,3 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
+      - name: Azure login
+      uses: azure/login@v2
+      with:
+        client-id: 
+        tenant-id: 
+        subscription-id: 

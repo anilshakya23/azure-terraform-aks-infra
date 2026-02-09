@@ -1,0 +1,7 @@
+name: azure-aks-infra-deployment
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+run-name: self-hosted

@@ -1,9 +1,6 @@
 name: azure-aks-infra-deployment
-on:
-  push:
-    branches:
-      - main
-      - feature/*
+on: 
+ workflow_dispatch: 
 run-name: self-hosted
 jobs:
   checkout:
